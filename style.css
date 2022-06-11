@@ -4,34 +4,40 @@ body{
 }
 @media (min-width:320px) {
     
-    .burger-button:focus{
-        box-shadow: none;
-    
-    }
-    .head{
+  
+    .main{
         height: 650px;
        
     }
-    .header__title{
-        font-size: 60px;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-       
-    }
-    .header__title{
+ 
+    .main__btn{
         font-size: 30px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 10px;
         margin: 150px 0;
         transition: .6s linear;
         cursor: default;
     }
-    .header__title:hover{
+    .main__btn:hover{
         text-shadow: 0px 0px 20px #FFFFFF;
     }
-    .mad-libs,.tom_thumbs{
+    .reg-btn{
+        width: 250px;
+        margin: 0 auto;
+
+    }
+    .burger-button:focus{
+        box-shadow: none;
+    
+    }
+    .mad-libs,.tom_thumbs,.user{
         padding: 80px 0;
     }
+   
     .button{
         width: 180px;
         margin: 20px auto;
@@ -47,7 +53,7 @@ body{
     
 }
 @media (min-width:768px) {
-    .header__title{
+    .main__title{
         font-size: 48px;
         
     }
@@ -60,11 +66,11 @@ body{
     
 }
 @media (min-width:1200px) {
-    .head{
-        height: 750px;
+    .main{
+        height: 720px;
         box-sizing: border-box;
     }
-    .header__title{
+    .main__btn{
         font-size: 60px;
         
     }

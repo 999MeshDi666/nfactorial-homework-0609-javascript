@@ -32,14 +32,14 @@ function bitDepth(color){
 console.log();
 
 $('.tom-thumbs__form').submit((e)=>{
-    e.preventDefault();
+ 
 
     bitDepth($('#InputColor').val());
     let resolution = $('#InputWidth').val() * $('#InputHeight').val();
     let totalSize = resolution * bit;
     console.log($('#InputColor').val())
     $('.thumb-text').html(`File size is ${totalSize}`);
-
+    e.preventDefault();
     $('.mad-libs__form').trigger('reset');
 
 })
