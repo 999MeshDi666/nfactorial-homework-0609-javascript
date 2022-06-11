@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <title>HW4</title>
 </head>
-<body>
+<body onload="getTheme()">
    
     <div class="container">
+      <div class="theme-block mt-5">
+        <button class="btn switcher light btn-light">Light mode</button>
+        <button class="btn  switcher ms-4 dark btn-dark">Dark mode</button>
+      </div>
       <div class="main d-flex align-items-center justify-content-center">
         <button class="main__btn" data-bs-toggle="modal" data-bs-target="#regModal">Let`s play</button>
       </div>
@@ -23,7 +27,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form method="post" class="row needs-validation form tom-thumbs__form">
+              <form action="" method="post" class="row needs-validation form tom-thumbs__form">
                 <div class="mb-3">
                   <label for="InputName" class="form-label text-black">Имя пользователя</label>
                   <input type="text" class="form-control" id="InputName" required>
